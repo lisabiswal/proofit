@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for ProofIt, a MERN app that analyzes content and returns trust scores",
+  "keywords": [
+    "mern",
+    "react",
+    "node",
+    "proofit",
+    "express"
+  ],
+  "homepage": "https://github.com/lisabiswal/proofit#readme",
+  "bugs": {
+    "url": "https://github.com/lisabiswal/proofit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisabiswal/proofit.git"
+  },
+  "license": "ISC",
+  "author": "Monalisa Biswal, Chaitanya Reddy",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3"
+  }
+}
