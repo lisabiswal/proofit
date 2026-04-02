@@ -10,4 +10,31 @@ nav .logo{
 nav .site-name{
   font-size: 1.5em;
   margin-left: 0.5em;
+  font-weight: 700;
+  color: rgb(111, 1, 111);
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  
+}
+nav .nav-links li a{
+  cursor: pointer;
+  font-size: 1.1em;
+  color: rgb(42, 2, 74);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(219, 199, 255, 0.378);
+  /* background: rgba(255, 255, 255, 0.8); */
+  padding: 5px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 0;
+  position: sticky;
+  z-index: 11;
+  backdrop-filter: blur(10px);
 }
