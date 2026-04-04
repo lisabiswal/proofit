@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+*{
+  box-sizing: border-box;
+}
 nav .logo{
   display: flex;
   align-items: center;
@@ -38,3 +41,47 @@ nav {
   z-index: 11;
   backdrop-filter: blur(10px);
 }
+
+/* Burger icon */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* CTA */
+.cta {
+  display: block;
+}
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(226, 210, 255);
+    transform: translateX(-100%);
+    transition: 0.3s;
+    padding: 20px 0;
+    padding-left: 2rem;
+  }
+
+  nav .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .cta {
+    display: none;
+  }
+}
+
