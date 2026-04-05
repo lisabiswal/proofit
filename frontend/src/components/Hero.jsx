@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="left">
         <h1>Detect Fraud. <br /> Verify Authenticity</h1>
         <p>Check if online content is real or fake in seconds. Our AI-powered platform analyzes text, news, links, and documents to protect you from misinformation</p>
-        <div className="cta">
+        <div className="cta-hero">
           <Link to="/analyze"><Button /></Link>
         </div>
       </div>
