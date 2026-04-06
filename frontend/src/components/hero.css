@@ -8,6 +8,12 @@
   /* background-color: #b79ed9; */
 }
 
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .hero .left {
   display: flex;
   flex-direction: column;
@@ -16,14 +22,27 @@
 
 .hero .left h1 {
   color: rgb(111, 1, 111);
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 700;
   margin-bottom: 0;
 }
 
+.hero .left .auth {
+  background: linear-gradient(45deg, #000000, #08b102, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .left .fraud {
+  background: linear-gradient(45deg, #000000, #ff0000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero .left p {
   color: rgb(111, 111, 111);
-  font-size: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .hero .right {
@@ -74,34 +93,41 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    margin: 0;                 /* ❌ remove outer gap */
+    margin: 0;
     padding: 1rem;
     text-align: center;
-    /* min-height: 100dvh;        ✅ full screen */
+    /* min-height: 100dvh;         */
     justify-content: center;
-    /* overflow-y: auto;          ✅ allow scroll if needed */
+    /* overflow-y: auto;          */
+  }
+
+  .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .hero .left {
     width: 100%;
     align-items: center;
-    gap: 0.8rem;               /* ✅ space between elements */
+    gap: 0.8rem;
   }
+
   .hero .cta-hero {
-  margin-bottom: 3rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  color: white;
-  border: none;
-  border-radius: 8px;
-}
+    margin-bottom: 3rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
 
   .hero .left h1 {
-    font-size: 2.5rem;         /* 🔽 reduce size */
+    font-size: 2.5rem;
   }
 
   .hero .left p {
-    font-size: 1rem;           /* 🔽 reduce size */
+    font-size: 1rem;
   }
 
   .hero .right {
@@ -110,7 +136,7 @@
 
   .hero .right img {
     width: 100%;
-    max-height: 220px;         /* ✅ prevent pushing CTA down */
+    max-height: 220px;
     object-fit: cover;
     box-shadow: none;
   }
