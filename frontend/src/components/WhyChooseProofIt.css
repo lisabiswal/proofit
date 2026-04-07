@@ -1,0 +1,117 @@
+.inner {
+  text-align: center;
+}
+.inner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #550255;
+}
+
+.inner p {
+  font-size: 1rem;
+  color: #818181;
+}
+.why-us{
+  /* background-color: #f9f9f9; */
+  padding: 4rem 0;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 5rem auto;
+  gap: 2.5rem;
+}
+.cards .card i {
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background-color: #9d729d;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px #6b426b
+}
+.card {
+  /* background-color: #f9f9f9; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 25%;
+  height: 350px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+.card:hover {
+  /* box-shadow: 0px 0px 15px 5px #e7e6e6; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.3s ease-in-out;
+  transform: translatey(-7px);
+  border: 1px solid rgb(125, 55, 127);
+}
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #550255;
+}
+.card p {
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
+@media (max-width: 768px) {
+
+  .why-us {
+    /* margin-top:0; */
+    padding: 1rem;
+  }
+
+  .inner h2 {
+    font-size: 2rem;
+  }
+
+  .inner p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cards {
+    width: 100%;
+    flex-direction: column;   /* 🔥 stack cards */
+    align-items: center;
+    margin: 2rem auto;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 90%;              /* full width look */
+    height: auto;            /* 🔥 remove fixed height */
+    padding: 1.2rem;
+  }
+
+  .cards .card i {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
