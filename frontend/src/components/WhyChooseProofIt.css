@@ -12,6 +12,7 @@
   color: #818181;
 }
 .why-us{
+  /* margin: 2rem; */
   /* background-color: #f9f9f9; */
   padding: 4rem 0;
 }
@@ -88,7 +89,7 @@
 
   .cards {
     width: 100%;
-    flex-direction: column;   /* 🔥 stack cards */
+    flex-direction: column;   
     align-items: center;
     margin: 2rem auto;
     gap: 1.5rem;
@@ -96,7 +97,7 @@
 
   .card {
     width: 90%;              /* full width look */
-    height: auto;            /* 🔥 remove fixed height */
+    height: auto;            /*  remove fixed height */
     padding: 1.2rem;
   }
 
