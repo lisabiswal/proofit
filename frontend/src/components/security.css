@@ -69,3 +69,8 @@
 .text ul li strong {
   color: rgb(45, 3, 62);
 }
+@media (max-width: 768px){
+  .text h2 {
+    font-size: 2.5rem;
+  }
+}
