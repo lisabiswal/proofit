@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import WhyChooseProofIt from '../components/WhyChooseProofIt'
 import Security from '../components/security'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <WhyChooseProofIt />
       <Security />
+      <Footer />
     </div>
   )
 }

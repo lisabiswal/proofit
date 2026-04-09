@@ -1,0 +1,142 @@
+/* CTA SECTION */
+.cta2 {
+  text-align: center;
+  background: linear-gradient(135deg, #37035cb9, #2d004db9);
+  color: white;
+  margin-top: 5rem;
+  padding: 4rem;
+  border-radius: 16px;
+  box-shadow: 
+    0 0 20px rgba(208, 154, 247, 0.25),
+    0 0 40px rgba(208, 154, 247, 0.15);
+}
+
+.cta2 h2 {
+  font-size: 2.5rem;
+  color: #d09af7;
+  text-shadow: 0 0 8px rgba(208, 154, 247, 0.6);
+}
+
+/* FOOTER */
+.footerSection {
+  background: linear-gradient(135deg, #1a002b, #2d004d);
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-top: 1px solid rgba(208, 154, 247, 0.2);
+  box-shadow: 0 -5px 30px rgba(208, 154, 247, 0.1);
+}
+
+/* subtle glow line */
+.footerSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background: #d09af7;
+  box-shadow: 0 0 10px #d09af7;
+}
+
+/* DESCRIPTION */
+.footerSection .description {
+  max-width: 300px;
+}
+
+.footerSection .description p {
+  font-size: 0.95rem;
+  color: #d6b3ff;
+  line-height: 1.5;
+}
+
+/* PRODUCTS */
+.footerSection .products h3 {
+  margin-bottom: 12px;
+  color: #d09af7;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px rgba(208, 154, 247, 0.5);
+}
+
+.footerSection .products p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.footerSection .products p:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* SOCIAL ICONS */
+.footerSection .links {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.footerSection .links i {
+  background: #ffffff10;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px rgba(208, 154, 247, 0.2);
+}
+
+.footerSection .links i:hover {
+  background: #d09af7;
+  color: #1a002b;
+  box-shadow: 
+    0 0 10px #d09af7,
+    0 0 20px #d09af7;
+}
+
+/* LINKS */
+.footerSection a {
+  text-decoration: none;
+  color: #cfc3dc;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+  .footerSection {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footerSection .description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta2 {
+    padding: 2.5rem 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .cta2 h2 {
+    font-size: 1.8rem;
+  }
+
+  .footerSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .footerSection .links {
+    justify-content: center;
+  }
+
+  .footerSection .products {
+    text-align: center;
+  }
+}

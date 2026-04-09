@@ -1,0 +1,20 @@
+.getStartedBtn, .howItWorks{
+    background-color: #f0ecf4;
+    color: #644e7a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+.getStartedBtn:hover, .howItWorks:hover{
+    background-color: #37035cb9;
+    color: white;
+}
+.howItWorks{
+    background-color: transparent;
+    color: #caace8;
+    border: 2px solid #dfcbf4;
+}
