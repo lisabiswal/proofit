@@ -19,6 +19,7 @@
 
 /* FOOTER */
 .footerSection {
+  position: relative; /* required for ::before */
   background: linear-gradient(135deg, #1a002b, #2d004d);
   color: #fff;
   padding: 50px 40px;
@@ -65,7 +66,7 @@
 .footerSection .products p {
   margin: 6px 0;
   font-size: 0.95rem;
-  transition: all 0.2s ease;
+  transition: 0.2s ease; /* simplified */
   cursor: pointer;
 }
 
@@ -85,7 +86,7 @@
   background: #ffffff10;
   padding: 10px;
   border-radius: 50%;
-  transition: all 0.2s ease;
+  transition: 0.2s ease; /* simplified */
   box-shadow: 0 0 8px rgba(208, 154, 247, 0.2);
 }
 
@@ -119,7 +120,6 @@
 @media (max-width: 600px) {
   .cta2 {
     padding: 2.5rem 1.5rem;
-    margin-top: 5rem;
   }
 
   .cta2 h2 {
@@ -134,9 +134,5 @@
 
   .footerSection .links {
     justify-content: center;
-  }
-
-  .footerSection .products {
-    text-align: center;
   }
 }

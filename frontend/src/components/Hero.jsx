@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="right">
-          <img src="proofit-hero-pic.jpg" alt="hero image" width={400} height={400} />
+          <img src="proofit-hero-pic.jpg" loading='lazy' alt="hero image" width={400} height={400} />
           <div className="verify-badge">
             <p>Verified</p>
           </div>

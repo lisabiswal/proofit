@@ -1,6 +1,6 @@
 import React from 'react'
 import './security.css'
-import Button from './Button'
+
 const Security = () => {
   return (
     <div>
