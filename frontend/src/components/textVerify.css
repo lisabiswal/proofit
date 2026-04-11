@@ -1,0 +1,9 @@
+.verifyText form #verifyText{
+  width: 100%;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.verifyText form {
+  margin: 10px;
+}

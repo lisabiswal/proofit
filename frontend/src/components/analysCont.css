@@ -1,0 +1,9 @@
+.analysBtn{
+  width: 100%;
+  padding: 10px;
+  background-color: #240f44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-        <li><Link to="/verify">Verify</Link></li>
+        <li><Link to="/analyze">Verify</Link></li>
         <li><Link to="/how-it-works">How it works</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
