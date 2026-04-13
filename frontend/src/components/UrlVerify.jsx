@@ -1,5 +1,4 @@
 import React from 'react'
-import AnalysCont from './AnalysCont'
 import "./urlVerify.css"
 const UrlVerify = ({value, setValue}) => {
   
