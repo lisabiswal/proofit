@@ -33,3 +33,94 @@
   color: aliceblue;
   transition: all 0.3s ease-in-out;
 }
+
+
+.outerBox {
+  width: 80%;
+  background-color: rgb(247, 246, 245);
+  height: auto;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Bar */
+.bar {
+  width: 100%;
+  min-height: 55px;
+  background-color: rgba(212, 190, 238, 0.65);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  color: rgb(42, 2, 74);
+  flex-wrap: wrap; /* important for small screens */
+  gap: 10px;
+  
+}
+
+/* Tabs */
+.textCont, 
+.url, 
+.document {
+  flex: 1; /* makes equal width */
+  min-width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: rgb(1, 0, 0);
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Active tab */
+.bg {
+  background-color: rgba(61, 23, 93, 0.755);
+  padding: 10px 20px;
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .outerBox {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .bar {
+    gap: 8px;
+  }
+
+  .textCont, 
+  .url, 
+  .document {
+    font-size: 14px;
+    height: 38px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .outerBox {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .bar {
+    flex-direction: column; /* stack tabs */
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .textCont, 
+  .url, 
+  .document {
+    width: 100%;
+    height: 45px;
+  }
+}

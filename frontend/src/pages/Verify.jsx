@@ -2,6 +2,8 @@ import React from 'react'
 import '../components/Verify.css'
 import AnalysCont from '../components/AnalysCont'
 import TextVerify from '../components/TextVerify'
+import UrlVerify from '../components/UrlVerify'
+import DocVerify from '../components/DocVerify'
 
 const Verify = () => {
   const [activeTab, setActiveTab] = React.useState("text")
@@ -16,7 +18,7 @@ const Verify = () => {
         >
           Text Content
         </div>
-        
+
 
         <div
           className={`url ${activeTab === "url" ? "bg" : ""}`}
@@ -33,7 +35,14 @@ const Verify = () => {
         </div>
 
       </div>
-      <TextVerify/>
+
+        {
+          activeTab === "text" ? <TextVerify /> :
+          activeTab === "url" ? <UrlVerify /> :
+          activeTab === "doc" ? <DocVerify /> : null
+      } 
+
+
     </div>
   )
 }

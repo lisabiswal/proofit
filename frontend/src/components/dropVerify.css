@@ -1,0 +1,41 @@
+/* center everything */
+.doc-form {
+  display: flex;
+  flex-direction: column;     /* 🔥 makes button go BELOW */
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* BIG centered drop box */
+.file-drop-input {
+  /* width: 500px; */
+  height: 220px;              /* 🔥 bigger */
+  border: 2px dashed #bbb;
+  border-radius: 15px;
+  background-color: #fafafa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-drop-input:hover {
+  border-color: #7a5cff;
+  background-color: #f4f2ff;
+}
+
+.file-drop-input.active {
+  border-color: #7a5cff;
+  background-color: #eeeaff;
+}
+
+/* text center */
+.file-drop-input label {
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  white-space: pre-line;   /* 🔥 allows line break */
+}
