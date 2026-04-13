@@ -7,3 +7,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.analysBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

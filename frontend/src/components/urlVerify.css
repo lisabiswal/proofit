@@ -1,9 +1,6 @@
-.urlVerify form #urlVerify{
+.urlVerify  #urlVerify{
   width: 100%;
   padding: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
-}
-.urlVerify form{
-  margin: 10px;
 }

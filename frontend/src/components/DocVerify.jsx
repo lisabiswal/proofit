@@ -1,58 +1,48 @@
-import React, { useState, useRef } from 'react'
-import AnalysCont from './AnalysCont'
+import React, { useRef, useState } from 'react'
 import "./dropVerify.css"
 
-const DocVerify = () => {
-  const [file, setFile] = useState(null)
+const DocVerify = ({ value, setValue }) => {
   const [dragActive, setDragActive] = useState(false)
   const fileInputRef = useRef(null)
-
-  const handelSubmit = (e) => {
-    e.preventDefault()
-    const text = e.target.file.value
-    console.log(text)
-  }
 
   const handleDrop = (e) => {
     e.preventDefault()
     setDragActive(false)
-    setFile(e.dataTransfer.files[0])
+    const droppedFile = e.dataTransfer.files[0]
+    if (droppedFile) setValue(droppedFile)
   }
 
   const handleClick = () => {
-    fileInputRef.current.click()   // open file dialog
+    fileInputRef.current.click()
   }
 
   return (
     <div className="urlVerify">
-      <form className="doc-form" onSubmit={handelSubmit}>
-
-        <div
-          className={`file-drop-input ${dragActive ? "active" : ""}`}
-          onClick={handleClick}   // whole box clickable
-          onDragOver={(e) => {
-            e.preventDefault()
-            setDragActive(true)
+      <div
+        className={`file-drop-input ${dragActive ? "active" : ""}`}
+        onClick={handleClick}
+        onDragOver={(e) => {
+          e.preventDefault()
+          setDragActive(true)
+        }}
+        onDragLeave={() => setDragActive(false)}
+        onDrop={handleDrop}
+      >
+        <input
+          type="file"
+          ref={fileInputRef}
+          onChange={(e) => {
+            const selectedFile = e.target.files[0]
+            if (selectedFile) setValue(selectedFile)
           }}
-          onDragLeave={() => setDragActive(false)}
-          onDrop={handleDrop}
-        >
-          <input
-            type="file"
-            ref={fileInputRef}
-            name='file'
-            hidden
-            onChange={(e) => setFile(e.target.files[0])}
-          />
+          name="file"
+          hidden
+        />
 
-          <p>
-            {file ? file.name : "Drag & Drop your document or click to browse"}
-          </p>
-        </div>
-
-        <AnalysCont />
-
-      </form>
+        <p>
+          {value ? value.name : "Drag & Drop your document or click to browse"}
+        </p>
+      </div>
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import './analysCont.css'
-const AnalysCont = () => {
+const AnalysCont = ({disabled}) => {
   return (
     <div className="analysCont">
-      <button className="analysBtn">Analyze Content</button>
+      <button className="analysBtn" disabled={disabled}>Analyze Content</button>
     </div>
   )
 }
